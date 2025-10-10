@@ -619,7 +619,7 @@ class Goose {
           position.x - size/2 < p.position.x + p.size.x/2) {
 
         // Land on top
-        if (velocity.y > 0 && position.y - size/2 < p.position.y - p.size.y/2) {
+        if (velocity.y > 0 && position.y + size/2 > p.position.y - p.size.y/2) {
           position.y = p.position.y - p.size.y/2 - size/2;
           velocity.y = 0;
           onGround = true;
